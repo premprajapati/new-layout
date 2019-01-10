@@ -1,0 +1,443 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+  body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  a {
+    color: #00B7FF;
+  }
+  .topbar {
+    @include topset;    
+  }
+  .secod_header {
+    @include layset;
+    background-color:$low_orange;
+    padding: 30px 0;
+}
+.login a,.reg a {
+  color:$white_color;
+  text-decoration: none;
+  text-align: right;
+  float: right;
+}
+.main_all_top div:nth-of-type(1) {
+    flex-grow: 1;
+}
+.main_all_top div:nth-of-type(2) {
+     flex-grow: 3;  
+}
+.main_all_top div:nth-of-type(3) {
+    flex-grow: 1;
+}
+.main_all_top div:nth-of-type(4) {
+  flex-grow: 1;
+}
+.city select {
+  width: 100%;
+  padding: 10px 0;
+  margin: 0 0 0 0;
+  background-color:$white_color;
+  border: 0;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  footer {
+    @include layset;
+    background-color: #ff5a00; 
+    padding: 60px 0 40px 0;
+  }
+.main_footer div:nth-of-type(1) {
+  flex-grow: 1;
+}
+
+.main_footer div:nth-of-type(2) {
+  flex-grow: 1;
+}
+
+.main_footer div:nth-of-type(3) {
+  flex-grow: 1;
+}
+
+.main_footer div:nth-of-type(4) {
+  flex-grow: 1;
+}
+.title {
+  @include layset;
+  margin-bottom: 10px;
+}
+.product_section { 
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+}
+.our_facility {
+  display: flex;
+  @include layset;
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px solid #f75d4b;
+  margin-bottom: 20px;
+} 
+.main_mail {
+  @include flexset;
+  @include layset;
+  margin: 20px 0 40px 0;
+} 
+div#home-slider,.slider {
+  @include layset;
+}
+.mail_first {
+  flex: 1;
+  background-color: #b7b7b7;
+  padding: 16px 0;
+} 
+.mail_one {
+  width: 100%;
+  -ms-flex-item-align: center;
+  align-self: center;
+  -webkit-box-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #b7b7b7;
+  padding: 37px 0;
+  float: right;
+  text-align: right;
+  padding-right: 30px;
+}  
+.mail_one input {
+  width: 80%;
+  padding: 30px 20px;
+}
+.mail_one button {
+    padding: 30px 24px;
+    background-color: #d24645;
+    border: 0;
+    color:$white_color;
+} 
+.mail_two {
+  flex: 1;
+} 
+.our_facility a {
+  color: #f75d4b;
+  font-size: 18px;
+  padding-bottom: 10px;
+  @include layset;
+} 
+.our_facility .box {
+  border-right: 1px solid red;
+}
+.our_facility .box:last-child {
+  border: 0;
+}
+.main_product div {
+  padding: 0px 15px 0px 0px;
+}
+.product1 {
+  flex: 2;
+} 
+.product2 {
+  flex: 1;
+}           
+.product3 {
+  flex: 1;
+}
+.main_product div>img {
+  border: 1px solid $orang_color;
+  max-width: 100%;
+}
+.main_product {
+  @include flexset;
+  @include layset;
+}
+.title h5 {
+@include title;
+}
+
+.main_footer h5 {
+  color: $white_color;
+  border-bottom: 1px solid $white_color;
+  float: left;
+  margin: 0 0 20px 0;
+}
+
+.main_footer ul {
+  @include layset;
+  padding: 0;
+}
+
+.main_footer ul li {
+  list-style: none;
+  padding: 0;
+  line-height: 29px;
+}
+
+.main_footer ul li a {
+  color: $white_color;
+} 
+.main_all_top {
+@include flexset;
+}
+.main_footer {
+  @include flexset;
+}
+.search_sec input {
+    border: 0;
+    padding: 10px 0px;
+    width: 100%;
+    margin-left: 6px;
+}
+.banner {
+  @include layset;
+}
+
+.banner img {
+  width: 100%;
+}
+.layout-set {
+  @include layset;
+}
+.search_sec i {
+    position: absolute;
+    right: 5px;
+    font-size: 22px;
+    top: 5px;
+}
+
+.search_sec {
+    position: relative;
+}
+.main_product.pro2 .product1 {
+  flex: 1;
+}
+
+.main_product.pro2 .product2 {
+  flex: 2;
+}
+
+.main_product.pro2 .product3 {
+  flex: 1;
+}
+.main_product.pro3 .product1 {
+  flex: 1;
+}
+.main_product.pro3 .product2 {
+  flex: 1;
+}
+.main_product.pro3 .product3 {
+  flex: 2;
+}
+.owl-pagination {
+  margin: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+}
+#our_team .owl-buttons .owl-prev {
+  position: absolute;
+  left: -20px;
+  border-radius: 0px;
+  background-color: $dark_orange;
+  position: absolute;
+  top: 40%;
+}
+
+.owl-buttons .owl-prev>i,.owl-buttons .owl-next>i {
+  font-size: 40px;
+}
+
+#our_team .owl-buttons .owl-next {
+  right: -20px;
+  border-radius: 0px;
+  background-color: $dark_orange;
+  position: absolute;
+  top: 40%;
+}
+#our_team .owl-pagination .owl-page span {
+  opacity: 10;
+  background-color:$white_color;
+  border: 0;
+}
+
+#our_team .owl-pagination .owl-page.active span {
+  background-color: $dark_orange;
+} 
+ul.side_menu {
+  padding: 0;
+  list-style: none;
+  border: 1px solid $dark_orange;
+  @include layset;
+  li {
+    @include layset;
+    }
+    li>a {
+      padding: 18px 20px;
+      @include layset;
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+      }
+      li.active a {
+        background-color: $dark_orange;
+        color:$white_color;
+        } 
+} 
+ul.side_menu li a:hover {
+  background-color: $dark_orange;
+  transition: 0.4s;
+}
+ul.side_menu li:hover>a {
+  color:$white_color;
+  transition: 0.4s;
+}
+#home-slider.owl-theme .owl-controls .owl-page span {
+  width: 20px;
+  height: 20px;
+  opacity: 10;
+} 
+#home-slider.owl-theme .owl-controls .owl-page span{
+background:$white_color;
+}
+#home-slider.owl-theme .owl-controls .owl-page.active span{
+  background: $orang_color;
+  }
+  
+div#exTab1 ul li a.active {
+  background-color:$white_color;
+  color: #000;
+  border: 1px solid $dark_orange;
+  border-bottom: 0;
+} 
+.main_first_section {
+  padding: 30px 0 0 0;
+  display: grid;
+  grid-template-columns: 30% 68%;
+  grid-gap: 0 20px;
+  @include layset;
+} 
+
+#exTab1 .tab-content {
+  color : #000;
+  background-color:transparent;
+  padding : 25px 15px;
+  border: 1px solid $dark_orange;
+}
+#exTab2 h3 {
+  color : white;
+  background-color: $dark_orange;
+  padding : 5px 15px;
+}
+.item img {
+  max-width: 100%;
+}
+div#exTab1 ul li a {
+  padding: 20px 25px;
+  display: table;
+  color:$white_color;
+  text-decoration: none;
+  border: 1px solid transparent;
+  background-color: $dark_orange;
+  margin: 0 0 0 10px;
+} 
+#exTab1 ul.nav.nav-pills li.active a {
+  background: transparent;
+  color: #000;
+  border: 1px solid $dark_orange;
+  border-bottom: 0;
+}
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+  color :$white_color;
+  background-color: #428bca;
+  padding : 5px 15px;
+}
+.sidebar {
+  flex: 1.2;
+}
+.tab_data {
+  flex: 4;
+} 
+@media only screen and (max-width: 500px) {
+.mail_one input {
+  width: 100%;
+  padding: 30px 20px;
+}
+.mail_one button {
+  width: 100%;
+}
+.mail_one {
+  padding: 0;
+} 
+.main_all_top {
+  display: unset;
+}
+.search_sec input {
+  margin: 0;
+}
+.search_sec {
+  margin: 10px 0;
+}
+.login a, .reg a {
+  margin: 10px 10px;
+} 
+}
+@media only screen and (max-width: 767px) {
+  .main_product {
+    display: unset;
+}
+.main_product div {
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+} 
+}
+@media only screen and (max-width: 991px) {
+.our_facility {
+  display: unset;
+}
+.our_facility .box{border: 0;    margin-bottom: 30px;} 
+.mail_first {
+  text-align: center;
+}
+.mail_one{
+  flex:unset;
+}
+.main_first_section {
+  grid-template-columns: 100%;
+}
+div#exTab1 ul li {
+  @include layset;
+}
+
+div#exTab1 ul li a {
+  @include layset;
+  border-bottom: 1px solid #ddd;
+} 
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .mail_first,.mail_two {
+    text-align: center;
+  }
+  .mail_one{
+    flex:unset;
+  }
+  }

@@ -1,0 +1,233 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/owl.carousel.css')
+    link(rel='stylesheet', href='css/owl.theme.css')
+    link(href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', rel='stylesheet', integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN', crossorigin='anonymous')
+    title Hello, world!
+  header                        
+    div.topbar
+     div.container  
+      ul.top-menu
+        li 
+         a(href='#') Login
+        li
+          a(href='#') Sign up
+        li 
+          a(href='#') Buy Now
+    .secod_header
+     div.container
+      div.main_all_top 
+       div.city
+        select
+         option(value ='Danh Muc') Danh Muc
+         option(value ='Ahmedabad') Ahmedabad
+       div.search_sec
+        input(type='search', q='googlesearch' placeholder='Tim Kim Shane, Phame nang Han')
+        i.fa.fa-search
+       div.login 
+        a(href='#') Login
+       div.reg 
+        a(href='#') Registration
+    .slider
+      #home-slider.owl-carousel.owl-theme
+        .item
+           img(src='images/slide3.jpg')
+        .item
+           img(src='images/banner.jpg')
+        .item
+           img(src='images/slide3.jpg')
+    .container
+       .main_first_section
+         .sidebar
+           ul.side_menu
+            li.active
+             a(href='#') Danhmuc 
+            li
+             a(href='#') Thoi Trang Phu Kien 
+            li 
+             a(href='#') Do Dung Sinh Not
+            li
+             a(href='#') NOi That Nagoi
+            li 
+             a(href='#') The Thai
+            li
+             a(href='#') Dich vu,gai tri
+            li 
+             a(href='#') thurc pham,Do ungh
+            li
+             a(href='#') Khac
+         .tab_data
+                #exTab1
+                  ul.nav.nav-pills
+                    li
+                      a(href='#1a', data-toggle='tab') Overview
+                    li
+                      a(href='#2a', data-toggle='tab') Using nav-pills
+                    li
+                      a(href='#3a', data-toggle='tab') Applying clearfix
+                    li
+                      a(href='#4a', data-toggle='tab') Background color
+                  .tab-content.clearfix
+                    #1a.tab-pane.active
+                      div#our_team.owl-carousel.owl-theme
+                          .item
+                             img(src='images/t1.jpeg') 
+                          .item
+                            img(src='images/t2.jpeg')     
+                    #2a.tab-pane
+                      h3
+                        | 2
+                    #3a.tab-pane
+                      h3
+                        | 3
+                    #4a.tab-pane
+                      h3 4
+
+  body
+    .container
+      div.product_section
+        div.title 
+            h5 KHUYENMY
+        div.main_product
+            div.product1 
+             img(src='images/p1.jpg')
+            div.product2
+             img(src='images/p2.jpg')
+            div.product3
+             img(src='images/p3.jpg')
+    .container
+      div.product_section
+        div.title 
+            h5 XUHUONG
+        div.main_product.pro2
+            div.product1 
+             img(src='images/p4.jpg')
+            div.product2
+             img(src='images/p5.jpg')
+            div.product3
+             img(src='images/p6.jpg') 
+    .container
+      div.product_section
+        div.title  
+            h5 DON VI BAN HANG UY TIN
+        div.main_product.pro3
+            div.product1 
+             img(src='images/p7.jpg')
+            div.product2
+             img(src='images/p8.jpg')
+            div.product3
+             img(src='images/p9.jpg') 
+    .container
+      .our_facility
+        .box
+          a(href='#') Doanh nghiep uy tin
+          img(src='images/box1.jpg')
+        .box
+          a(href='#') Thanh toan an toan
+          img(src='images/box2.jpg')
+        .box
+          a(href='#') Giam Sat Don Hang
+          img(src='images/box3.jpg') 
+        .box
+          a(href='#') Van Chuyen Linh Hoat
+          img(src='images/box4.jpg') 
+    .container
+       .main_mail
+         div.mail_first
+              img(src='images/ml.jpg')
+         div.mail_one
+           input(type='email' placeholder='Enter Email ID')
+           button Send    
+         div.mail_two 
+           img(src='images/email.jpg')  
+  footer 
+    div.container
+      .main_footer
+       .footer1
+        h5 About Links
+        ul
+         li 
+          a(href='#') Home
+         li
+          a(href='#') Product
+         li 
+          a(href='#') About
+         li
+          a(href='#') Services
+         li
+          a(href='#') Contact Us
+       .footer2
+        h5 Useful Links
+        ul
+         li 
+          a(href='#') Home
+         li
+          a(href='#') Product
+         li 
+          a(href='#') About
+         li
+          a(href='#') Services
+         li
+          a(href='#') Contact Us
+       .footer3
+        h5 Useful Links
+        ul
+         li 
+          a(href='#') Home
+         li
+          a(href='#') Product
+         li 
+          a(href='#') About
+         li
+          a(href='#') Services
+         li
+          a(href='#') Contact Us
+       .footer4
+        div.layout-set
+         img(src='images/fish.jpeg')    
+    
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    script(type='text/javascript', src='javascripts/owl.carousel.min.js')
+    script.
+      jQuery(document).ready(function() {
+      jQuery("#home-slider").owlCarousel({
+      navigation : false, // Show next and prev buttons
+      navigationText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
+      ],
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      dots: true,
+      autoPlay : 4000,
+      singleItem:true
+      });
+      });
+    script.
+      jQuery(document).ready(function() {
+      jQuery("#our_team").owlCarousel({
+      navigation : true, // Show next and prev buttons
+      navigationText: [
+      "<i class='fa fa-angle-left'></i>",
+      "<i class='fa fa-angle-right'></i>"
+      ],
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      autoPlay : 6000,
+      singleItem:true
+      });
+      });
+
+
+    

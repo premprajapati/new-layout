@@ -1,0 +1,37 @@
+@mixin topset {
+       float: left;
+        width: 100%;
+        background-color: $orang_color; 
+        padding: 10px 0;
+      
+      ul.top-menu {
+        display: flex;
+        list-style: none;
+        color: #fff;
+        float: right;
+        margin: 0;
+        flex-wrap: wrap;
+      }
+      ul.top-menu li a {
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 16px;
+        display: table;
+      }
+    
+}
+@mixin layset {
+    float: left;
+    width: 100%;
+    
+}
+@mixin title {
+    background-color:$low_orange;
+    float: left;
+    padding: 8px 40px;
+    color:$white_color;
+}
+@mixin flexset {
+    display: flex;
+    flex-wrap: wrap;
+}

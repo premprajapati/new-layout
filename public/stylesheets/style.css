@@ -1,0 +1,20 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.topbar {
+  float: left;
+  width: 100%;
+  background-color: #fe7139;
+}
+
+ul.top-menu {
+  display: flex;
+  list-style: none;
+  color: #fff;
+  float: right;
+}
